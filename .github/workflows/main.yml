@@ -22,7 +22,7 @@ jobs:
 
       - name: Start Flask server
         run: |
-          flask run &
+          python server.py &
           echo "Waiting for Flask server to start"
           sleep 30
       - name: Run Locust load tests
